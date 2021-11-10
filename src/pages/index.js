@@ -28,3 +28,5 @@ export default function Home() {
     </Layout>
   )
 }
+
+// https://youtu.be/JlxXHlygVLM?t=31910
