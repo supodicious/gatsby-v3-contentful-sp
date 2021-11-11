@@ -17,9 +17,9 @@
   /* main */
   --primary-500: #645cff;
   --primary-600: #554ed9;
-  --primary-700: #4640b3;
+  --primary-700: #0096E1;
   --primary-800: #37338c;
-  --primary-900: #282566;
+  --primary-900: #006699;
   --primary-1000: #191740;
   --primary-1100: #0a0919;
   /* grey */
@@ -195,11 +195,15 @@ button,
   cursor: pointer;
   appearance: none;
   color: var(--white);
-  background: var(--primary-500);
+  background: var(--primary-900);
   border: none;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
-  padding: 0.375rem 0.75rem;
+  padding: 3px;
+  /* padding-top: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 0; */
   box-shadow: var(--shadow-1);
   transition: var(--transition);
   text-transform: capitalize;
@@ -351,16 +355,20 @@ form > *:last-child {
   justify-content: space-between;
   align-items: center;
 }
-.nav-header img {
+.nav-header-logo {
   width: 200px;
   margin-left: -6px;
   margin-bottom: -9px;
 }
 .nav-btn {
-  padding: 0.15rem 0.75rem;
+  transition: var(--transition);
 }
-.nav-btn svg {
-  font-size: 1.5rem;
+.nav-btn-img {
+  background-color: white;
+  border-radius: var(--borderRadius);
+  width: 3rem;
+  display: flex;
+  justify-content: center;
 }
 .nav-links {
   height: 0;
