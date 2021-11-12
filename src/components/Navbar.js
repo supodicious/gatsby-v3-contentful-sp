@@ -2,18 +2,23 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import logo from "../assets/images/logo.svg"
 import saLogo from "../assets/images/stellar-anchors.svg"
+import onClickOutside from "react-onclickoutside"
 
 const Navbar = () => {
   const [show, setShow] = useState(false)
+  const toggle = () => setShow(!show)
+
+  Navbar.handleClickOutside = () => setShow(false)
+
   return (
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
           <Link to="/">
-            <img className='nav-header-logo' src={logo} alt="stellar anchors" />
+            <img className="nav-header-logo" src={logo} alt="stellar anchors" />
           </Link>
-          <button className="nav-btn" onClick={() => setShow(!show)}>
-            <img className='nav-btn-img' src={saLogo} alt="stellar anchors" />
+          <button className="nav-btn" onClick={() => setShow(toggle)}>
+            <img className="nav-btn-img" src={saLogo} alt="stellar anchors" />
           </button>
         </div>
         <div className={show ? "nav-links show-links" : "nav-links"}>
@@ -31,7 +36,7 @@ const Navbar = () => {
             activeClassName="active-link"
             onClick={() => setShow(false)}
           >
-            recipes
+            assets
           </Link>
           <Link
             to="/tags"
@@ -60,4 +65,8 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+const clickOutsideConfig = {
+  handleClickOutside: () => Navbar.handleClickOutside,
+}
+
+export default onClickOutside(Navbar, clickOutsideConfig)
