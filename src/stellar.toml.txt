@@ -1,0 +1,257 @@
+NETWORK_PASSPHRASE="Public Global Stellar Network ; September 2015"
+VERSION="2.0.0"
+
+FEDERATION_SERVER="https://www.stellaranchors.com/stellar/federation/"
+SIGNING_KEY = "GBV7HXFHS2CPOGMU2WRDRZGZ3LWL6WF5YWC63FQGCOFGTLMDUPJXHFNB"
+WEB_AUTH_ENDPOINT = "https://www.stellaranchors.com/stellar/auth/"
+
+ACCOUNTS=[
+"GBNYQT7C2PQMSV4LPRY2YOGKHI3VBZFYKLZUE572QUYPBMDOAAVASEDD"
+]
+
+[DOCUMENTATION]
+ORG_NAME="Stellar Anchors"
+ORG_URL="https://www.stellaranchors.com"
+ORG_LOGO="https://www.stellaranchors.com/assets/images/logo.png"
+ORG_DESCRIPTION="Local Control. Global Cooperation"
+ORG_KEYBASE="stellaranchors"
+ORG_TELEGRAM="https://t.me/StellarAnchors"
+ORG_OFFICIAL_EMAIL="webmaster@stellaranchors.com"
+ORG_SUPPORT_EMAIL="webmaster@stellaranchors.com"
+
+[[PRINCIPALS]]
+name="Rob Panico"
+email="rob@stellaranchors.com"
+
+[[CURRENCIES]]
+code="AGOZ"
+issuer="GDHWSX5MU6M3GM2CRBUB5756PHCZDKQFCVA22NJOVUXZ3K55HU3ZX2NH"
+name="Silver"
+desc="AGOZ is an automated non-collateralized (algorithmic) token pegged to the market futures price for a hundredth (1/100) of a troy ounce of silver."
+conditions="Trade AGOZ on StellarDEX"
+image="https://www.stellaranchors.com/assets/images/tokens/AGOZ.png"
+status="live"
+
+[[CURRENCIES]]
+code="AUOZ"
+issuer="GDHWSX5MU6M3GM2CRBUB5756PHCZDKQFCVA22NJOVUXZ3K55HU3ZX2NH"
+name="Gold"
+desc="AUOZ is an automated non-collateralized (algorithmic) token pegged to the market futures price for a hundredth (1/100) of a troy ounce of gold."
+conditions="Trade AUOZ on StellarDEX"
+image="https://www.stellaranchors.com/assets/images/tokens/AUOZ.png"
+status="live"
+
+[[CURRENCIES]]
+code="BEEF"
+issuer="GDPSP4KDZLXB7WJCK5AEVUSI3RVFNTAC7EQDLWFTVY36IXUVONM3AG4F"
+name="Cattle Futures"
+conditions="Trade BEEF on StellarDex to gain exposure to the current market price of cattle"
+desc="BEEF is an automated non-collateralized (algorithmic) token pegged to the market futures price for a pound of cattle"
+image="https://www.stellaranchors.com/assets/images/tokens/BEEF.png"
+status="live"
+
+[[CURRENCIES]]
+code="Build"
+issuer="GBNYQT7C2PQMSV4LPRY2YOGKHI3VBZFYKLZUE572QUYPBMDOAAVASEDD"
+name="Build"
+desc="Build is the organizational and startup enabler for Stellar Anchors Global Cooperative"
+conditions="Build pays a weekly 1% dividend to holders of 100 or more tokens and will be exchangeable for all future cooperative network tokens"
+image="https://www.stellaranchors.com/assets/images/tokens/Build.png"
+status="live"
+
+[[CURRENCIES]]
+code="COAL"
+issuer="GDPSP4KDZLXB7WJCK5AEVUSI3RVFNTAC7EQDLWFTVY36IXUVONM3AG4F"
+name="Coal Futures"
+conditions="Trade COAL on StellarDex to gain exposure to the current market price of coal"
+desc="COAL is an automated non-collateralized (algorithmic) token pegged to the market futures price for a pound of coal"
+image="https://www.stellaranchors.com/assets/images/tokens/COAL.png"
+status="live"
+
+[[CURRENCIES]]
+code="COFFEE"
+issuer="GDPSP4KDZLXB7WJCK5AEVUSI3RVFNTAC7EQDLWFTVY36IXUVONM3AG4F"
+name="Coffee Futures"
+conditions="Trade COFFEE on StellarDex to gain exposure to the current market price of coffee."
+desc="COFFEE is an automated non-collateralized (algorithmic) token pegged to the market futures price for a pound of coffee"
+image="https://www.stellaranchors.com/assets/images/tokens/COFFEE.png"
+status="live"
+
+[[CURRENCIES]]
+code="CORN"
+issuer="GDPSP4KDZLXB7WJCK5AEVUSI3RVFNTAC7EQDLWFTVY36IXUVONM3AG4F"
+name="Corn Futures"
+conditions="Trade CORN on StellarDex to gain exposure to the current market price of corn."
+desc="CORN is an automated non-collateralized (algorithmic) token pegged to the market futures price for a pound of corn"
+image="https://www.stellaranchors.com/assets/images/tokens/CORN.png"
+status="live"
+
+[[CURRENCIES]]
+code="COTTON"
+issuer="GDPSP4KDZLXB7WJCK5AEVUSI3RVFNTAC7EQDLWFTVY36IXUVONM3AG4F"
+name="Cotton Futures"
+conditions="Trade CORN on StellarDex to gain exposure to the current market price of cotton."
+desc="COTTON is an automated non-collateralized (algorithmic) token pegged to the market futures price for a pound of cotton"
+image="https://www.stellaranchors.com/assets/images/tokens/COTTON.png"
+status="live"
+
+[[CURRENCIES]]
+code="CRUDE"
+issuer="GDPSP4KDZLXB7WJCK5AEVUSI3RVFNTAC7EQDLWFTVY36IXUVONM3AG4F"
+name="Crude Oil Futures"
+conditions="Trade CRUDE on StellarDex to gain exposure to the current market price of crude oil."
+desc="CRUDE is an automated non-collateralized (algorithmic) token pegged to the market futures price for a pound of crude oil (1/300th barrel)."
+image="https://www.stellaranchors.com/assets/images/tokens/CRUDE.png"
+status="live"
+
+[[CURRENCIES]]
+code="ENERGY"
+issuer="GDPSP4KDZLXB7WJCK5AEVUSI3RVFNTAC7EQDLWFTVY36IXUVONM3AG4F"
+name="Energy Futures"
+conditions="Trade ENERGY on StellarDex to gain exposure to the current market price of energy."
+desc="ENERGY is an automated non-collateralized (algorithmic) token pegged to the average of the market futures price for crude oil, gasoline, natural gas, coal, and uranium"
+image="https://www.stellaranchors.com/assets/images/tokens/ENERGY.png"
+status="live"
+
+[[CURRENCIES]]
+code="GRAIN"
+issuer="GDPSP4KDZLXB7WJCK5AEVUSI3RVFNTAC7EQDLWFTVY36IXUVONM3AG4F"
+name="Grain Futures"
+conditions="Trade GRAIN on StellarDex to gain exposure to the current market price of grain."
+desc="GRAIN is an automated non-collateralized (algorithmic) token pegged to the average of the market futures price for wheat, corn, rice, oats, and soybeans"
+image="https://www.stellaranchors.com/assets/images/tokens/GRAIN.png"
+status="live"
+
+[[CURRENCIES]]
+code="HYBRID"
+issuer="GDDCOP2GDKNEMNB5EDIWIVT5QX5PNKZTKODEU3HCTILWA37S6ZCUTLLB"
+name="Multicurrency and Commodity Stablecoin"
+desc="HYBRID is an automated non-collateralized (algorithmic) index stablecoin pegged to the market futures price for a basket of values which include: precious and base metals, energy, agriculture, and national fiat currencies."
+conditions="Trade HYBRID on StellarDEX."
+image="https://www.stellaranchors.com/assets/images/tokens/HYBRID.png"
+status="live"
+
+[[CURRENCIES]]
+code="IRON"
+issuer="GDPSP4KDZLXB7WJCK5AEVUSI3RVFNTAC7EQDLWFTVY36IXUVONM3AG4F"
+name="Iron Futures"
+conditions="Trade IRON on StellarDex to gain exposure to the current market price of iron."
+desc="IRON is an automated non-collateralized (algorithmic) token pegged to the market futures price for a pound of iron"
+image="https://www.stellaranchors.com/assets/images/tokens/IRON.png"
+status="live"
+
+[[CURRENCIES]]
+code="NATGAS"
+issuer="GDPSP4KDZLXB7WJCK5AEVUSI3RVFNTAC7EQDLWFTVY36IXUVONM3AG4F"
+name="Natural Gas Futures"
+conditions="Trade NATGAS on StellarDex to gain exposure to the current market price of natural gas."
+desc="NATGAS is an automated non-collateralized (algorithmic) token pegged to the market futures price for one MMBtu of natural gas"
+image="https://www.stellaranchors.com/assets/images/tokens/NATGAS.png"
+status="live"
+
+[[CURRENCIES]]
+code="OATS"
+issuer="GDPSP4KDZLXB7WJCK5AEVUSI3RVFNTAC7EQDLWFTVY36IXUVONM3AG4F"
+name="Oats Futures"
+conditions="Trade OATS on StellarDex to gain exposure to the current market price of oats."
+desc="OATS is an automated non-collateralized (algorithmic) token pegged to the market futures price for a pound of oats"
+image="https://www.stellaranchors.com/assets/images/tokens/OATS.png"
+status="live"
+
+[[CURRENCIES]]
+code="PORK"
+issuer="GDPSP4KDZLXB7WJCK5AEVUSI3RVFNTAC7EQDLWFTVY36IXUVONM3AG4F"
+name="Hogs Futures"
+conditions="Trade PORK on StellarDex to gain exposure to the current market price of hogs."
+desc="PORK is an automated non-collateralized (algorithmic) token pegged to the market futures price for a pound of hogs"
+image="https://www.stellaranchors.com/assets/images/tokens/PORK.png"
+status="live"
+
+[[CURRENCIES]]
+code="PTOZ"
+issuer="GDHWSX5MU6M3GM2CRBUB5756PHCZDKQFCVA22NJOVUXZ3K55HU3ZX2NH"
+name="Platinum and Palladium"
+desc="PTOZ is an automated non-collateralized (algorithmic) token pegged to the market futures price combined average of a hundredth (1/100) of one ounce of palladium and platinum"
+conditions="Trade PTOZ on StellarDEX."
+image="https://www.stellaranchors.com/assets/images/tokens/PTOZ.png"
+status="live"
+
+[[CURRENCIES]]
+code="RICE"
+issuer="GDPSP4KDZLXB7WJCK5AEVUSI3RVFNTAC7EQDLWFTVY36IXUVONM3AG4F"
+name="Rice Futures"
+conditions="Trade RICE on StellarDex to gain exposure to the current market price of rice."
+desc="RICE is an automated non-collateralized (algorithmic) token pegged to the market futures price for a pound of rice"
+image="https://www.stellaranchors.com/assets/images/tokens/RICE.png"
+status="live"
+
+[[CURRENCIES]]
+code="SOYB"
+issuer="GDPSP4KDZLXB7WJCK5AEVUSI3RVFNTAC7EQDLWFTVY36IXUVONM3AG4F"
+name="Soybean Futures"
+conditions="Trade SOYBEANS on StellarDex to gain exposure to the current market price of soybeans."
+desc="SOYB is an automated non-collateralized (algorithmic) token pegged to the market futures price for a pound of soybeans"
+image="https://www.stellaranchors.com/assets/images/tokens/SOYB.png"
+status="live"
+
+[[CURRENCIES]]
+code="STAMP"
+issuer="GDDCOP2GDKNEMNB5EDIWIVT5QX5PNKZTKODEU3HCTILWA37S6ZCUTLLB"
+name="US First Class Forever Postage Stamp"
+desc="STAMP is an automated non-collateralized (algorithmic) token pegged to the price of a United States first class forever postage stamp."
+conditions="Trade STAMP on StellarDEX"
+image="https://www.stellaranchors.com/assets/images/tokens/STAMP.png"
+is_asset_anchored=true
+anchor_asset_type="other"
+anchor_asset="postage"
+redemption_instructions="Signup for a member account on our website to redeem tokens"
+status="live"
+
+[[CURRENCIES]]
+code="SUGAR"
+issuer="GDPSP4KDZLXB7WJCK5AEVUSI3RVFNTAC7EQDLWFTVY36IXUVONM3AG4F"
+name="Sugar Futures"
+conditions="Trade SUGAR on StellarDex to gain exposure to the current market price of sugar."
+desc="SUGAR is an automated non-collateralized (algorithmic) token pegged to the market futures price for a pound of sugar"
+image="https://www.stellaranchors.com/assets/images/tokens/SUGAR.png"
+status="live"
+
+[[CURRENCIES]]
+code="TIMBER"
+issuer="GDPSP4KDZLXB7WJCK5AEVUSI3RVFNTAC7EQDLWFTVY36IXUVONM3AG4F"
+name="Lumber Futures"
+conditions="Trade TIMBER on StellarDex to gain exposure to the current market price of lumber."
+desc="TIMBER is an automated non-collateralized (algorithmic) token pegged to the market futures price for a board foot of lumber"
+image="https://www.stellaranchors.com/assets/images/tokens/TIMBER.png"
+status="live"
+
+[[CURRENCIES]]
+code="UNION"
+issuer="GDDCOP2GDKNEMNB5EDIWIVT5QX5PNKZTKODEU3HCTILWA37S6ZCUTLLB"
+name="Universal Partner Credit Stablecoin"
+desc="UNION is an automated non-collateralized (algorithmic) token pegged to the price of one United States Dollar. UNION are exchangeable for any partner credit token featured on our exchange. Partner credit tokens function exactly like gift cards and can be exchanged for real world goods and services."
+conditions="Trade UNION on StellarDEX"
+image="https://www.stellaranchors.com/assets/images/tokens/UNION.png"
+is_asset_anchored=true
+anchor_asset_type="credit"
+anchor_asset="partner credit tokens"
+redemption_instructions="Signup for a member account on our website to redeem tokens"
+status="live"
+
+[[CURRENCIES]]
+code="Watt"
+issuer="GBNYQT7C2PQMSV4LPRY2YOGKHI3VBZFYKLZUE572QUYPBMDOAAVASEDD"
+name="Watt"
+desc="Watt is the primary network token of Stellar Anchors and is used as a currency to pay for API calls. Watt is an automated, non-collateralized, algorithmic, and self-hedging stable token pegged to a basket of values including energy and other key commodities, precious metals, and major national fiat currencies"
+conditions="One Stellar Anchors Core API transaction, which consists of a series of grouped API calls, costs a single Watt to process"
+image="https://www.stellaranchors.com/assets/images/tokens/Watt.png"
+status="live"
+
+[[CURRENCIES]]
+code="WHEAT"
+issuer="GDPSP4KDZLXB7WJCK5AEVUSI3RVFNTAC7EQDLWFTVY36IXUVONM3AG4F"
+name="Wheat Futures"
+conditions="Trade WHEAT on StellarDex to gain exposure to the current market price of wheat."
+desc="WHEAT is an automated non-collateralized (algorithmic) token pegged to the market futures price for a pound of wheat"
+image="https://www.stellaranchors.com/assets/images/tokens/WHEAT.png"
+status="live"
