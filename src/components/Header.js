@@ -32,7 +32,7 @@ const Header = () => {
               alt="stellar anchors badge"
               layout="constrained"
               placeholder="tracedSVG"
-            />
+              />
           </div>
         </Flex>
       </Container>

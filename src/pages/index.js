@@ -6,17 +6,16 @@ import { ThemeProvider } from "styled-components"
 
 import "normalize.css"
 import "../assets/css/main.css"
-import Header from "../components/Header"
 
 const theme = {
   colors: {
-    // navbar: "#C9EDFF",
-    // header: "#EBFCFF",
-    // navlink: "#006699",
-    // navlinkHover: "#47C2FF",
-    // body: "#F7F7F7",
-    // assetCard: "#D8F2FF",
-    // footer: "#006699",
+    navbar: "#C9EDFF",
+    header: "#EBFCFF",
+    navlink: "#006699",
+    navlinkHover: "#47C2FF",
+    body: "#F7F7F7",
+    assetCard: "#D8F2FF",
+    footer: "#006699",
   },
   mobile: "768px",
 }
@@ -25,7 +24,6 @@ export default function Home() {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-        <Header />
         <SEO title="Home " />
         <main className="page">
           <AllAssets />

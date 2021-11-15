@@ -1,23 +1,27 @@
 import styled from "styled-components"
+import { ThemeProvider } from "styled-components"
 
 export const StyledNavbar = styled.nav`
-  /* background-color: ${({ theme }) => theme.colors.navbar}; */
-  background-color: "#C9EDFF";
+  background-color: ${({ theme }) => theme.colors.navbar || "#C9EDFF"};
+  /* background-color: "#C9EDFF"; */
   width: 100%;
 
   .navbar {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   .nav-center {
-    width: 90vw;
+    width: 100vw;
     max-width: 960px;
     white-space: nowrap;
+    margin: auto;
   }
   .nav-header {
-    height: 6rem;
+    height: 5rem;
     display: flex;
+    flex: 1;
     gap: 1rem;
     justify-content: space-between;
     align-items: center;
@@ -128,9 +132,14 @@ export const StyledNavbar = styled.nav`
       width: 250px;
       margin-left: 0;
       margin-right: 0;
-      margin-bottom: -7px;
+      margin-bottom: -15px;
 
-      @media (max-width: 320px) {
+
+      @media (max-width: 360px) {
+        width: 200px;
+      }
+
+      @media (max-width: 280px) {
         width: 170px;
       }
     }

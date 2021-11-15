@@ -1,8 +1,9 @@
 import styled from "styled-components"
+import GlobalStyles from "./Global"
 
 export const StyledHeader = styled.header`
-  /* background-color: ${({ theme }) => theme.colors.header}; */
-  background-color: "#EBFCFF";
+  background-color: ${({ theme }) => theme.colors.header};
+  /* background-color: "#EBFCFF"; */
   display: flex;
   flex-direction: row;
   /* gap: 3rem; */

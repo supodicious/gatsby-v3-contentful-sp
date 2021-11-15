@@ -9,8 +9,8 @@ export const StyledAssetsList = styled.div`
   }
 
   .asset-card {
-    /* background-color: ${({ theme }) => theme.colors.assetCard}; */
-    background-color: "#D8F2FF";
+    background-color: ${({ theme }) => theme.colors.assetCard};
+    /* background-color: "#D8F2FF"; */
     height: 11rem;
     display: flex;
     flex-direction: column;

@@ -2,7 +2,7 @@ import React from "react"
 import SEO from "../components/SEO"
 import Layout from "../components/Layout"
 import AllAssets from "../components/AllAssets"
-import { ThemeProvider } from "styled-components"
+// import { ThemeProvider } from "styled-components"
 
 const theme = {
   colors: {
@@ -19,14 +19,14 @@ const theme = {
 
 const Assets = () => {
   return (
-    <ThemeProvider theme={theme}>
+    // <ThemeProvider theme={theme}>
       <Layout>
         <SEO title="Assets " />
         <main className="page">
           <AllAssets />
         </main>
       </Layout>
-    </ThemeProvider>
+    // </ThemeProvider>
   )
 }
 
