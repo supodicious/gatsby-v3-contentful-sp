@@ -68,13 +68,13 @@ export const StyledNavbar = styled.nav`
     transition: var(--transition);
 
     &:hover {
-      color: ${({ theme }) => theme.colors.navlinkHover};
+      color: "#47C2FF";
       font-weight: bold;
       transform: scale(0.98);
     }
   }
   .active-link {
-    color: ${({ theme }) => theme.colors.navlink};
+    color: #006699;
     font-weight: bold;
   }
   .contact-link {
