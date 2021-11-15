@@ -1,7 +1,8 @@
 import styled from "styled-components"
 
 export const StyledNavbar = styled.nav`
-  background-color: ${({ theme }) => theme.colors.navbar};
+  /* background-color: ${({ theme }) => theme.colors.navbar}; */
+  background-color: "#C9EDFF";
   width: 100%;
 
   .navbar {
