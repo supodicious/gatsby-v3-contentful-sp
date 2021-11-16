@@ -17,11 +17,11 @@ const AssetTemplate = ({ data }) => {
             <section className="recipe-hero">
               <img src={imageLink} alt={name} className="about-img" />
               <article className="recipe-info">
-                <h2>{{ code }.code}</h2>
+                <h2>{code}</h2>
                 <h5>{desc.desc}</h5>
                 <h5>{conditions}</h5>
-                <h6>{issuer}</h6>
-                <h6>{stellarExpertLink}</h6>
+                <h5>Issuer: {issuer}</h5>
+                <a href={stellarExpertLink} target="_blank">Current data for {code} at stellar.expert</a>
               </article>
             </section>
           </div>
