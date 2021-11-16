@@ -7,6 +7,16 @@
 
 :root {
   /* COLORS  */
+  /* site colors */
+  --navbar: #C9EDFF,
+  --header: #EBFCFF,
+  --navlink: #006699,
+  --navlink-hover: #47C2FF,
+  --body: #F7F7F7,
+  --asset-card: #D8F2FF,
+  --footer: #006699,
+  /* mobile*/
+  --mobile: 768px,
   /* primary */
   --primary-0: #f0efff;
   --primary-50: #d8d6ff;

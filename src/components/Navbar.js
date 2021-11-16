@@ -7,7 +7,6 @@ import onClickOutside from "react-onclickoutside"
 import Logo from "../assets/images/logo.svg"
 import ButtonLogo from "../assets/images/stellar-anchors.svg"
 import AnchorLogo from "../assets/images/stellar-anchors-clear.svg"
-import Header from "./Header"
 
 const Navbar = () => {
   const [show, setShow] = useState(false)
@@ -89,7 +88,6 @@ const Navbar = () => {
           </nav>
         </Flex>
       </Container>
-      <Header />
     </StyledNavbar>
   )
 }

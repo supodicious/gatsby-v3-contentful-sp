@@ -7,7 +7,7 @@ import { Flex } from "./styles/Flex.styled"
 const Header = () => {
   return (
     <StyledHeader>
-      <Container>
+      {/* <Container> */}
         <Flex>
           <div>
             <h4>
@@ -35,7 +35,7 @@ const Header = () => {
               />
           </div>
         </Flex>
-      </Container>
+      {/* </Container> */}
     </StyledHeader>
   )
 }

@@ -1,9 +1,9 @@
 import styled from "styled-components"
-import { ThemeProvider } from "styled-components"
+import "normalize.css"
+import "../../assets/css/main.css"
 
 export const StyledNavbar = styled.nav`
-  background-color: ${({ theme }) => theme.colors.navbar || "#C9EDFF"};
-  /* background-color: "#C9EDFF"; */
+  background-color: #c9edff;
   width: 100%;
 
   .navbar {
@@ -33,18 +33,21 @@ export const StyledNavbar = styled.nav`
 
     &:hover {
       transform: scale(0.98);
+      transition: 0.3s ease-in-out all;
     }
   }
   .nav-logo-img {
-    width: 6rem;
-    padding-right: 2rem;
+    display: none;
   }
   .nav-btn {
-    transition: var(--transition);
+    &:hover {
+      transform: scale(0.98);
+      transition: 0.3s ease-in-out all;
+    }
   }
   .nav-btn-img {
     background-color: white;
-    border-radius: var(--borderRadius);
+    border-radius: 0.25rem;
     width: 3rem;
     display: flex;
     justify-content: center;
@@ -54,7 +57,7 @@ export const StyledNavbar = styled.nav`
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: var(--transition);
+    transition: 0.3s ease-in-out all;
   }
   .show-links {
     height: 23.9375rem;
@@ -65,11 +68,11 @@ export const StyledNavbar = styled.nav`
     text-align: center;
     font-size: 1.5rem;
     text-transform: capitalize;
-    color: var(--grey-1000);
-    letter-spacing: var(--letterSpacing);
+    color: #333538;
+    letter-spacing: 1px;
     padding: 1rem 0;
-    border-top: 1px solid var(--grey-500);
-    transition: var(--transition);
+    border-top: 1px solid #cbd3e1;
+    transition: 0.3s ease-in-out all;
 
     &:hover {
       color: "#47C2FF";
@@ -102,6 +105,13 @@ export const StyledNavbar = styled.nav`
       height: auto;
     }
 
+    .nav-logo-img {
+      display: initial;
+      width: 6rem;
+      padding-right: 2rem;
+      transition: 0.3s ease-in-out all;
+    }
+
     .nav-btn {
       display: none;
     }
@@ -125,7 +135,7 @@ export const StyledNavbar = styled.nav`
     }
   }
 
-  @media (max-width: ${({ theme }) => theme.mobile}) {
+  @media (max-width: 768px) {
     flex-direction: column;
 
     .nav-header-logo {
@@ -133,7 +143,6 @@ export const StyledNavbar = styled.nav`
       margin-left: 0;
       margin-right: 0;
       margin-bottom: -15px;
-
 
       @media (max-width: 360px) {
         width: 200px;

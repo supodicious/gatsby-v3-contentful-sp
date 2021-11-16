@@ -1,23 +1,19 @@
 import styled from "styled-components"
-import GlobalStyles from "./Global"
 
 export const StyledHeader = styled.header`
-  background-color: ${({ theme }) => theme.colors.header};
-  /* background-color: "#EBFCFF"; */
+  /* background-color: #EBFCFF; */
+  overflow: visible;
   display: flex;
   flex-direction: row;
-  /* gap: 3rem; */
-  /* column-gap: 3rem; */
   align-items: center;
   justify-content: space-between;
   padding-top: 2rem;
   padding-bottom: 2rem;
 
-  
   p {
     margin: 0;
   }
-  
+
   .tag-line {
     display: flex;
     flex-direction: row;
@@ -32,12 +28,12 @@ export const StyledHeader = styled.header`
     max-width: 300px;
   }
 
-  @media (max-width: ${({ theme }) => theme.mobile}) {
+  @media (max-width: 768px) {
     flex-direction: column;
 
     .tag-line {
-    flex-direction: column;
-  }
+      flex-direction: column;
+    }
 
     .image {
       padding-top: 2rem;

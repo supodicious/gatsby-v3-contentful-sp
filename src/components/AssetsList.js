@@ -19,7 +19,7 @@ const AssetsList = ({ assets = [] }) => {
             conditions,
             image,
           } = asset
-          const imageSrc = getImage(image)
+          // const imageSrc = getImage(image)
 
           if ({ code }?.code) {
             const slug = slugify({ code }.code, { lower: true })
@@ -28,8 +28,8 @@ const AssetsList = ({ assets = [] }) => {
               <Link key={id} to={`/${slug}`} className="asset">
                 <div className="asset-card">
                   <div className="asset-logo">
-                    <GatsbyImage
-                      image={imageSrc}
+                    <img
+                      src={image}
                       className="asset-img"
                       alt={name}
                       // layout="fixed"
