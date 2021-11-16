@@ -1,12 +1,12 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
-import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
+import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
 const AssetTemplate = ({ data }) => {
-  const { code, name, desc, image } = data.contentfulAsset
-  const imageSrc = getImage(image)
+  const { code, name, imageLink, desc, conditions, issuer, stellarExpertLink } = data.contentfulAsset
+
+  console.log(data);
 
   if ({ code }?.code) {
     return (
@@ -15,10 +15,13 @@ const AssetTemplate = ({ data }) => {
         <main className="page">
           <div className="recipe-page">
             <section className="recipe-hero">
-              <img src={imageSrc} alt={name} className="about-img" />
+              <img src={imageLink} alt={name} className="about-img" />
               <article className="recipe-info">
                 <h2>{{ code }.code}</h2>
-                <p>{desc.desc}</p>
+                <h5>{desc.desc}</h5>
+                <h5>{conditions}</h5>
+                <h6>{issuer}</h6>
+                <h6>{stellarExpertLink}</h6>
               </article>
             </section>
           </div>
@@ -35,12 +38,13 @@ export const query = graphql`
     contentfulAsset(code: { eq: $code }) {
       code
       name
+      imageLink
       desc {
         desc
       }
-      image {
-        gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG)
-      }
+      conditions
+      issuer
+      stellarExpertLink
     }
   }
 `

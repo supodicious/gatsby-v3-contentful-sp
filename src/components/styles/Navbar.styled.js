@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import "normalize.css"
-import "../../assets/css/main.css"
+// import "normalize.css"
+// import "../../assets/css/main.css"
 
 export const StyledNavbar = styled.nav`
   background-color: #c9edff;
@@ -108,8 +108,7 @@ export const StyledNavbar = styled.nav`
     .nav-logo-img {
       display: initial;
       width: 6rem;
-      padding-right: 2rem;
-      transition: 0.3s ease-in-out all;
+      padding-right: 1rem;
     }
 
     .nav-btn {
@@ -140,7 +139,7 @@ export const StyledNavbar = styled.nav`
 
     .nav-header-logo {
       width: 250px;
-      margin-left: 0;
+      margin-left: -8px;
       margin-right: 0;
       margin-bottom: -15px;
 
@@ -150,6 +149,7 @@ export const StyledNavbar = styled.nav`
 
       @media (max-width: 280px) {
         width: 170px;
+        margin-left: -5px;
       }
     }
   }

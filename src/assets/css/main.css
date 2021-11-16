@@ -100,8 +100,9 @@ body {
 }
 
 p {
+  font-size: 17px;
   margin: 0;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   max-width: 40em;
 }
 
@@ -149,6 +150,7 @@ ul {
   list-style-type: none;
 }
 a {
+  /* color: red; */
   text-decoration: none;
 }
 .img {
