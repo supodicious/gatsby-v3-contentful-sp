@@ -1,13 +1,11 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { StyledHeader } from "./styles/Header.styled"
-import { Container } from "./styles/Container.styled"
 import { Flex } from "./styles/Flex.styled"
 
 const Header = () => {
   return (
     <StyledHeader>
-      {/* <Container> */}
         <Flex>
           <div>
             <h4>
@@ -17,7 +15,7 @@ const Header = () => {
               </div>
             </h4>
             <div>
-              <p>
+              <p className='sa-desc'>
                 Stellar Anchors is a decentralized global cooperative that
                 places small businesses and community associations on an equal
                 competitive footing with multi-national corporations and
@@ -35,7 +33,6 @@ const Header = () => {
               />
           </div>
         </Flex>
-      {/* </Container> */}
     </StyledHeader>
   )
 }

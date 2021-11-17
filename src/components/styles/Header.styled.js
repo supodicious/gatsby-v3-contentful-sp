@@ -8,7 +8,7 @@ export const StyledHeader = styled.header`
   align-items: center;
   justify-content: space-between;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  /* padding-bottom: 2rem; */
 
   p {
     margin: 0;
@@ -33,6 +33,11 @@ export const StyledHeader = styled.header`
 
     .tag-line {
       flex-direction: column;
+    }
+
+    .sa-desc {
+      /* display: none; */
+      font-size: 15px;
     }
 
     .image {

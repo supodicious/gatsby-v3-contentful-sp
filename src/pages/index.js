@@ -3,6 +3,7 @@ import SEO from "../components/SEO"
 import Layout from "../components/Layout"
 import Header from "../components/Header"
 import AllAssets from "../components/AllAssets"
+import AssetSlider from "../components/AssetSlider"
 
 import "normalize.css"
 import "../assets/css/main.css"
@@ -11,9 +12,12 @@ export default function Home() {
   return (
     <Layout>
       <SEO title="Home" />
-      <Header />
-      <main className="page">
-        <AllAssets />
+      <div className='header-background'>
+        <Header />
+      </div>
+      <main className='page'>
+        {/* <AllAssets /> */}
+        <AssetSlider />
       </main>
     </Layout>
   )
